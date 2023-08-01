@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameRps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body>
+<main style="height: 100vh;" class="  pt-2  bg-secondary">
+    <div class="row  ">
+        <div style="width: 70%;  margin:auto; display: flex;flex-direction: column;align-items: center;
+        " class="col-12 bg-light rounded " >
+        <h1>Rock Paper Scissors</h1>
+        <p>Please press one of the buttons for play,  <span class="text-danger "> "R","P","S"</span>!!!!</p>
+        </div>
+        <div class="d-flex justify-content-center p-1 g-4 ">
+            <div class="col 1 mt-2  bg-danger">
+                <div>
+                    <button
+                    id="buttonStart" 
+                    type="button" 
+                    class="btn btn-success px-4 mx-5 mb-2">START</button>
+                </div>
+
+
+                <div id="leftDiv" class="  d-none">
+                <div class="bg-light text-danger h4 p-2 ms-2">
+                    
+                <p>Remote Control or klaviature key?</p>
+            </div>
+                <div class="controlButtons mt-0 m-3 p-2 bg-light ">
+                    <button 
+                    id="buttonRemote"
+                    type="button"
+                     class="btn btn-dark m-2 ">Remote</button>
+                    <button
+                    id="buttonKlav"
+                     type="button" 
+                     class="btn btn-dark m-2 px-4">klavuature</button>
+            </div>
+            </div>
+        </div>
+        <div class="col-4 m-2 card p-1 text-center bg-primary">
+
+            <div class="card m-4 p-3 text-center bg-light">
+                <h3>Player1<span class="text-danger">(Me)</span>
+                </h3>
+                <h2 id="myTitle">Ready?</h2>
+                <h4 id="myScore">Point:0</h4>
+            </div>
+
+            <div class="card mx-4 p-5 text-center bg-light">
+                <img
+                id="myImg"
+                 width="200"
+                  src="./images/r.png" 
+                  alt="">
+                <h5 id="myName" ></h5>
+            </div>
+
+
+        </div>
+
+        
+        <div class=" col-4 card m-2  p-1 text-center bg-primary">
+
+            <div class="card m-4 p-3 text-center bg-light">
+                <h3>Player2<span class="text-danger">(Comp)</span>
+                </h3>
+                <h2 id="compTitle">Ready?</h2>
+                <h4 id="compScore">Point:0</h4>
+            </div>
+
+            <div class=" card mx-4 p-5 text-center bg-light">
+                <img 
+                id="compImg" 
+                width="200" src="./images/p.png" alt="">
+                <h5 id="compName">paper</h5>
+            </div>
+        </div>
+        <div class="col 1 mt-2  bg-danger ">
+            <div id="rightDiv"  class="d-none">
+            <div class="bg-light text-danger h4 p-2 ms-2">
+            <p>Remote Control</p>
+        </div>
+            <div class="controlButtons mt-0 m-3 p-2 bg-light ">
+                <button id="buttonRock"
+                type="button" 
+                class="btn btn-dark m-2 ">R</button>
+                <button
+                id="buttonPaper"
+                type="button" 
+                class="btn btn-dark m-2">P</button>
+            <button 
+            id="buttonScissors"
+            type="button" class="btn btn-dark m-2">S</button>
+        </div>
+    </div>
+        </div>
+</div>
+    </div>
+
+</main>
+<script src="./main.js"></script>
+</body>
+</html>
