@@ -151,6 +151,7 @@ buttonRemote.addEventListener("click",function(){
 
    const myChoice = e
    const compChoice = randomElement(hands);
+   
     
       console.log("mychoice", myChoice);
       console.log("compChoice", compChoice);
@@ -185,4 +186,5 @@ else{
     player2Score +=1
     showImage(myChoice,compChoice)}
 }
+
 
