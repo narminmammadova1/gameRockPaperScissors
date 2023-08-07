@@ -17,3 +17,4 @@ const buttonScissors=document.querySelector("#buttonScissors")
 
 const leftDiv=document.querySelector("#leftDiv")
 const rightDiv=document.querySelector("#rightDiv")
+let btn=document.getElementsByClassName("btn")

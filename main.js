@@ -1,5 +1,6 @@
 
-let btn=document.getElementsByClassName("btn")
+
+
 let hands=["r","p","s"]
 let player1Score=0
 let player2Score=0
@@ -24,7 +25,6 @@ function isWin(meWin){
 compTitle.innerHTML=!meWin ? "win" :"Lose"
 
 myTitle.classList.remove(`${meWin ? "text-danger" :"text-danger"}`)
-
 
 myTitle.classList.add(`${meWin ? "text-success" :"text-danger"}`)
 
@@ -116,15 +116,12 @@ buttonRemote.addEventListener("click",function(){
   
   buttonRock.addEventListener("click",function(){
     startGame2("r")
-    myName.innerHTML="rock"
   })
   buttonPaper.addEventListener("click",function(){
     startGame2("p")
-    myName.innerHTML="paper"
   })
   buttonScissors.addEventListener("click",function(){
     startGame2("s")
-    myName.innerHTML="scissors"
   })
   
   })

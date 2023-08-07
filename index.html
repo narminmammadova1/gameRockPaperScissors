@@ -21,13 +21,13 @@
                     <button
                     id="buttonStart" 
                     type="button" 
-                    class="btn btn-danger px-4 fs-2  mx-4 mb-2">START</button>
+                    class="btn btn-danger px-3 fs-2  mx-2 mb-2">START</button>
                 </div>
 
 
                 <div id="leftDiv" class="  d-none">
-                <div class="bg-light rounded text-danger h4 p-2 ms-2">
-                    
+                <!-- <div class="bg-light rounded text-danger h4 p-2 ms-2"> -->
+                    <div class="card m-4 h4 p-2 text-center  text-danger bg-light">
                 <p>Remote Control or Keyboard?</p>
             </div>
                 <div class="controlButtons mt-0 m-3 p-2  ">
@@ -45,20 +45,22 @@
         <div class="col-4 m-2 card p-1 text-center bg-primary">
 
             <div class="card m-4 p-3 text-center bg-light">
-                <h3>Player1<span class="text-danger">(Me)</span>
+                <h3>Player1<span class="text-danger">( Me . )</span>
                 </h3>
                 <h2 id="myTitle">Ready?</h2>
                 <h4 id="myScore">Point:0</h4>
             </div>
 
-            <div style="position: relative; max-height: 200px; min-height: 200px;" class="card mx-4 p-4 text-center bg-light">
+            <div style="position: relative; max-height: 200px; min-height: 200px;
+             display: flex; align-items: center; flex-direction: column; justify-content:end" 
+             class="card mx-4 p-4 text-center bg-light">
                 <img
                 id="myImg"
-                 width="150"
+                 width="35%"
                  
                   src="./images/r.png" 
-                  alt="" style="position: absolute; bottom: 20px;left: 100px;">
-                <h5  id="myName" style="position: absolute; bottom: 10px;left: 150px;" ></h5>
+                  alt="" >
+                <h5  id="myName" style="font-size: 100%;" ></h5>
             </div>
 
 
@@ -74,22 +76,27 @@
                 <h4 id="compScore">Point:0</h4>
             </div>
 
-            <div style=" position: relative;max-height: 200px; min-height: 200px;" class=" card mx-4  px-5 text-center bg-light">
+            <!-- <div style=" position: relative;max-height: 200px; min-height: 200px;"
+             class=" card mx-4  px-5 text-center bg-light"> -->
+
+              <div style="position: relative; max-height: 200px; min-height: 200px;
+             display: flex; align-items: center; flex-direction: column; justify-content:end" 
+             class="card mx-4 p-4 text-center bg-light">
                 <img 
                 id="compImg"  
-                width="150" src="./images/r.png" alt="" style="position: absolute; bottom: 20px;left: 100px;">
-                <h5 id="compName" style="position: absolute; bottom: 10px;left: 150px;"></h5>
+                width="35%" src="./images/r.png" alt="" >
+                <h5 id="compName" style="font-size: 100%;"></h5>
             </div>
         </div>
         <div class="col 1 mt-2  ">
             <div id="rightDiv"  class="d-none">
-            <div class="bg-light text-danger rounded h4 p-2 ms-2">
+            <div class="card m-2 h4 p-2 text-center bg-light text-danger">
             <p>Remote Control</p>
         </div>
-            <div class="controlButtons mt-0 m-3 p-2  ">
+            <div class="controlButtons mt-0 p-2  ">
                 <button id="buttonRock"
                 type="button" 
-                class="btn btn-dark m-1 fs-5"
+                class="btn btn-dark m-2 fs-5"
                 value="r">R</button>
                 <button
                 id="buttonPaper"
